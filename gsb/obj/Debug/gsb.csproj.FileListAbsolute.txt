@@ -1,0 +1,17 @@
+D:\Ecole\S3\AP\gsb\gsb\obj\Debug\gsb.csproj.AssemblyReference.cache
+D:\Ecole\S3\AP\gsb\gsb\obj\Debug\gsb.Properties.Resources.resources
+D:\Ecole\S3\AP\gsb\gsb\obj\Debug\gsb.csproj.GenerateResource.cache
+D:\Ecole\S3\AP\gsb\gsb\obj\Debug\gsb.csproj.CoreCompileInputs.cache
+D:\Ecole\S3\AP\gsb\gsb\obj\Debug\gsb.frmAjoutRapport.resources
+D:\Ecole\S3\AP\gsb\gsb\bin\Debug\gsb.exe.config
+D:\Ecole\S3\AP\gsb\gsb\bin\Debug\gsb.exe
+D:\Ecole\S3\AP\gsb\gsb\bin\Debug\gsb.pdb
+D:\Ecole\S3\AP\gsb\gsb\bin\Debug\EntityFramework.dll
+D:\Ecole\S3\AP\gsb\gsb\bin\Debug\EntityFramework.SqlServer.dll
+D:\Ecole\S3\AP\gsb\gsb\bin\Debug\EntityFramework.xml
+D:\Ecole\S3\AP\gsb\gsb\bin\Debug\EntityFramework.SqlServer.xml
+D:\Ecole\S3\AP\gsb\gsb\bin\Debug\fr\EntityFramework.resources.dll
+D:\Ecole\S3\AP\gsb\gsb\obj\Debug\gsb.csproj.CopyComplete
+D:\Ecole\S3\AP\gsb\gsb\obj\Debug\gsb.exe
+D:\Ecole\S3\AP\gsb\gsb\obj\Debug\gsb.pdb
+D:\Ecole\S3\AP\gsb\gsb\obj\Debug\gsb.Form1.resources
