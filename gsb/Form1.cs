@@ -35,5 +35,12 @@ namespace gsb
             frm.MdiParent = this;
             frm.Show();
         }
+
+        private void ajouterToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmMedecin f=new frmMedecin(this.mesDonneesEF);
+            f.MdiParent = this;
+            f.Show();
+        }
     }
 }

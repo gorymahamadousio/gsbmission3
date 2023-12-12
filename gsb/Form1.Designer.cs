@@ -57,7 +57,7 @@
             this.rapportToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(580, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(580, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -109,13 +109,14 @@
             // ajouterToolStripMenuItem1
             // 
             this.ajouterToolStripMenuItem1.Name = "ajouterToolStripMenuItem1";
-            this.ajouterToolStripMenuItem1.Size = new System.Drawing.Size(195, 26);
+            this.ajouterToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
             this.ajouterToolStripMenuItem1.Text = "&Gérer";
+            this.ajouterToolStripMenuItem1.Click += new System.EventHandler(this.ajouterToolStripMenuItem1_Click);
             // 
             // majToolStripMenuItem
             // 
             this.majToolStripMenuItem.Name = "majToolStripMenuItem";
-            this.majToolStripMenuItem.Size = new System.Drawing.Size(195, 26);
+            this.majToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.majToolStripMenuItem.Text = "&Dernier rapport";
             // 
             // visiteurToolStripMenuItem
@@ -151,7 +152,7 @@
             // ajouterToolStripMenuItem3
             // 
             this.ajouterToolStripMenuItem3.Name = "ajouterToolStripMenuItem3";
-            this.ajouterToolStripMenuItem3.Size = new System.Drawing.Size(224, 26);
+            this.ajouterToolStripMenuItem3.Size = new System.Drawing.Size(165, 26);
             this.ajouterToolStripMenuItem3.Text = "&Ajouter";
             this.ajouterToolStripMenuItem3.Click += new System.EventHandler(this.ajouterToolStripMenuItem3_Click);
             // 
@@ -169,7 +170,7 @@
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Appli-CR";
             this.Load += new System.EventHandler(this.Form1_Load);

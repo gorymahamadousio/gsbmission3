@@ -36,17 +36,18 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.cmbVisiteur = new System.Windows.Forms.ComboBox();
+            this.txtMotif = new System.Windows.Forms.TextBox();
             this.bindingSourceVisiteur = new System.Windows.Forms.BindingSource(this.components);
+            this.txtBilan = new System.Windows.Forms.TextBox();
+            this.date = new System.Windows.Forms.DateTimePicker();
+            this.cmbVisiteur = new System.Windows.Forms.ComboBox();
             this.cmbMedecin = new System.Windows.Forms.ComboBox();
             this.bindingSourceMedecin = new System.Windows.Forms.BindingSource(this.components);
             this.cmbFamille = new System.Windows.Forms.ComboBox();
             this.bindingSourceFamille = new System.Windows.Forms.BindingSource(this.components);
-            this.bindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorRapport = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingSourceRapport = new System.Windows.Forms.BindingSource(this.components);
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
@@ -57,19 +58,23 @@
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingSourceRapport = new System.Windows.Forms.BindingSource(this.components);
+            this.button1 = new System.Windows.Forms.Button();
+            this.id = new System.Windows.Forms.Label();
+            this.txtNum = new System.Windows.Forms.TextBox();
+            this.bindingSourceOffrir = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceVisiteur)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceMedecin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceFamille)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator)).BeginInit();
-            this.bindingNavigator.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigatorRapport)).BeginInit();
+            this.bindingNavigatorRapport.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceRapport)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceOffrir)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(55, 57);
+            this.label1.Location = new System.Drawing.Point(55, 112);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(67, 16);
             this.label1.TabIndex = 1;
@@ -78,7 +83,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(58, 116);
+            this.label2.Location = new System.Drawing.Point(55, 167);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(75, 16);
             this.label2.TabIndex = 2;
@@ -87,7 +92,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(58, 169);
+            this.label3.Location = new System.Drawing.Point(58, 220);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(156, 16);
             this.label3.TabIndex = 3;
@@ -96,7 +101,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(61, 225);
+            this.label4.Location = new System.Drawing.Point(63, 279);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(42, 16);
             this.label4.TabIndex = 4;
@@ -105,7 +110,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(64, 285);
+            this.label5.Location = new System.Drawing.Point(61, 329);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(44, 16);
             this.label5.TabIndex = 5;
@@ -114,54 +119,57 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(64, 346);
+            this.label6.Location = new System.Drawing.Point(61, 372);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(43, 16);
             this.label6.TabIndex = 6;
             this.label6.Text = "Bilan :";
             // 
-            // textBox5
+            // txtMotif
             // 
-            this.textBox5.Location = new System.Drawing.Point(159, 279);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 22);
-            this.textBox5.TabIndex = 10;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(162, 340);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 22);
-            this.textBox6.TabIndex = 11;
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(159, 220);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
-            this.dateTimePicker1.TabIndex = 12;
-            // 
-            // cmbVisiteur
-            // 
-            this.cmbVisiteur.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceVisiteur, "id", true));
-            this.cmbVisiteur.DataSource = this.bindingSourceVisiteur;
-            this.cmbVisiteur.FormattingEnabled = true;
-            this.cmbVisiteur.Location = new System.Drawing.Point(162, 57);
-            this.cmbVisiteur.Name = "cmbVisiteur";
-            this.cmbVisiteur.Size = new System.Drawing.Size(121, 24);
-            this.cmbVisiteur.TabIndex = 13;
-            this.cmbVisiteur.SelectedIndexChanged += new System.EventHandler(this.cmbVisiteur_SelectedIndexChanged);
+            this.txtMotif.Location = new System.Drawing.Point(159, 323);
+            this.txtMotif.Name = "txtMotif";
+            this.txtMotif.Size = new System.Drawing.Size(100, 22);
+            this.txtMotif.TabIndex = 10;
             // 
             // bindingSourceVisiteur
             // 
             this.bindingSourceVisiteur.DataSource = typeof(gsb.visiteur);
             // 
+            // txtBilan
+            // 
+            this.txtBilan.Location = new System.Drawing.Point(162, 366);
+            this.txtBilan.Name = "txtBilan";
+            this.txtBilan.Size = new System.Drawing.Size(100, 22);
+            this.txtBilan.TabIndex = 11;
+            // 
+            // date
+            // 
+            this.date.Location = new System.Drawing.Point(162, 273);
+            this.date.Name = "date";
+            this.date.Size = new System.Drawing.Size(200, 22);
+            this.date.TabIndex = 12;
+            // 
+            // cmbVisiteur
+            // 
+            this.cmbVisiteur.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceVisiteur, "id", true));
+            this.cmbVisiteur.DataSource = this.bindingSourceVisiteur;
+            this.cmbVisiteur.DisplayMember = "id";
+            this.cmbVisiteur.FormattingEnabled = true;
+            this.cmbVisiteur.Location = new System.Drawing.Point(162, 104);
+            this.cmbVisiteur.Name = "cmbVisiteur";
+            this.cmbVisiteur.Size = new System.Drawing.Size(121, 24);
+            this.cmbVisiteur.TabIndex = 13;
+            this.cmbVisiteur.SelectedIndexChanged += new System.EventHandler(this.cmbVisiteur_SelectedIndexChanged);
+            // 
             // cmbMedecin
             // 
             this.cmbMedecin.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceMedecin, "id", true));
+            this.cmbMedecin.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.bindingSourceMedecin, "id", true));
             this.cmbMedecin.DataSource = this.bindingSourceMedecin;
+            this.cmbMedecin.DisplayMember = "id";
             this.cmbMedecin.FormattingEnabled = true;
-            this.cmbMedecin.Location = new System.Drawing.Point(162, 113);
+            this.cmbMedecin.Location = new System.Drawing.Point(162, 159);
             this.cmbMedecin.Name = "cmbMedecin";
             this.cmbMedecin.Size = new System.Drawing.Size(121, 24);
             this.cmbMedecin.TabIndex = 14;
@@ -172,10 +180,11 @@
             // 
             // cmbFamille
             // 
-            this.cmbFamille.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceFamille, "libelle", true));
+            this.cmbFamille.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceFamille, "id", true));
             this.cmbFamille.DataSource = this.bindingSourceFamille;
+            this.cmbFamille.DisplayMember = "libelle";
             this.cmbFamille.FormattingEnabled = true;
-            this.cmbFamille.Location = new System.Drawing.Point(238, 169);
+            this.cmbFamille.Location = new System.Drawing.Point(230, 212);
             this.cmbFamille.Name = "cmbFamille";
             this.cmbFamille.Size = new System.Drawing.Size(121, 24);
             this.cmbFamille.TabIndex = 15;
@@ -184,14 +193,14 @@
             // 
             this.bindingSourceFamille.DataSource = typeof(gsb.famille);
             // 
-            // bindingNavigator
+            // bindingNavigatorRapport
             // 
-            this.bindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
-            this.bindingNavigator.BindingSource = this.bindingSourceRapport;
-            this.bindingNavigator.CountItem = this.bindingNavigatorCountItem;
-            this.bindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
-            this.bindingNavigator.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.bindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.bindingNavigatorRapport.AddNewItem = this.bindingNavigatorAddNewItem;
+            this.bindingNavigatorRapport.BindingSource = this.bindingSourceRapport;
+            this.bindingNavigatorRapport.CountItem = this.bindingNavigatorCountItem;
+            this.bindingNavigatorRapport.DeleteItem = this.bindingNavigatorDeleteItem;
+            this.bindingNavigatorRapport.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.bindingNavigatorRapport.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bindingNavigatorMoveFirstItem,
             this.bindingNavigatorMovePreviousItem,
             this.bindingNavigatorSeparator,
@@ -203,16 +212,16 @@
             this.bindingNavigatorSeparator2,
             this.bindingNavigatorAddNewItem,
             this.bindingNavigatorDeleteItem});
-            this.bindingNavigator.Location = new System.Drawing.Point(0, 0);
-            this.bindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
-            this.bindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
-            this.bindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
-            this.bindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
-            this.bindingNavigator.Name = "bindingNavigator";
-            this.bindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.bindingNavigator.Size = new System.Drawing.Size(800, 27);
-            this.bindingNavigator.TabIndex = 16;
-            this.bindingNavigator.Text = "bindingNavigator1";
+            this.bindingNavigatorRapport.Location = new System.Drawing.Point(0, 0);
+            this.bindingNavigatorRapport.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
+            this.bindingNavigatorRapport.MoveLastItem = this.bindingNavigatorMoveLastItem;
+            this.bindingNavigatorRapport.MoveNextItem = this.bindingNavigatorMoveNextItem;
+            this.bindingNavigatorRapport.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
+            this.bindingNavigatorRapport.Name = "bindingNavigatorRapport";
+            this.bindingNavigatorRapport.PositionItem = this.bindingNavigatorPositionItem;
+            this.bindingNavigatorRapport.Size = new System.Drawing.Size(800, 27);
+            this.bindingNavigatorRapport.TabIndex = 16;
+            this.bindingNavigatorRapport.Text = "bindingNavigator1";
             // 
             // bindingNavigatorAddNewItem
             // 
@@ -222,6 +231,11 @@
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
             this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorAddNewItem.Text = "Ajouter nouveau";
+            this.bindingNavigatorAddNewItem.Click += new System.EventHandler(this.bindingNavigatorAddNewItem_Click);
+            // 
+            // bindingSourceRapport
+            // 
+            this.bindingSourceRapport.DataSource = typeof(gsb.rapport);
             // 
             // bindingNavigatorCountItem
             // 
@@ -300,22 +314,51 @@
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 27);
             // 
-            // bindingSourceRapport
+            // button1
             // 
-            this.bindingSourceRapport.DataSource = typeof(gsb.rapport);
+            this.button1.Location = new System.Drawing.Point(366, 329);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(159, 32);
+            this.button1.TabIndex = 17;
+            this.button1.Text = "enregistrer";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // id
+            // 
+            this.id.AutoSize = true;
+            this.id.Location = new System.Drawing.Point(58, 62);
+            this.id.Name = "id";
+            this.id.Size = new System.Drawing.Size(21, 16);
+            this.id.TabIndex = 18;
+            this.id.Text = "Id:";
+            // 
+            // txtNum
+            // 
+            this.txtNum.Location = new System.Drawing.Point(159, 55);
+            this.txtNum.Name = "txtNum";
+            this.txtNum.Size = new System.Drawing.Size(100, 22);
+            this.txtNum.TabIndex = 19;
+            // 
+            // bindingSourceOffrir
+            // 
+            this.bindingSourceOffrir.DataSource = typeof(gsb.offrir);
             // 
             // frmAjoutRapport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.bindingNavigator);
+            this.Controls.Add(this.txtNum);
+            this.Controls.Add(this.id);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.bindingNavigatorRapport);
             this.Controls.Add(this.cmbFamille);
             this.Controls.Add(this.cmbMedecin);
             this.Controls.Add(this.cmbVisiteur);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.date);
+            this.Controls.Add(this.txtBilan);
+            this.Controls.Add(this.txtMotif);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -323,15 +366,16 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "frmAjoutRapport";
-            this.Text = "frmAjoutRapport";
+            this.Text = "l";
             this.Load += new System.EventHandler(this.frmAjoutRapport_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceVisiteur)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceMedecin)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceFamille)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator)).EndInit();
-            this.bindingNavigator.ResumeLayout(false);
-            this.bindingNavigator.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigatorRapport)).EndInit();
+            this.bindingNavigatorRapport.ResumeLayout(false);
+            this.bindingNavigatorRapport.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceRapport)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceOffrir)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -344,13 +388,13 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.TextBox txtMotif;
+        private System.Windows.Forms.TextBox txtBilan;
+        private System.Windows.Forms.DateTimePicker date;
         private System.Windows.Forms.ComboBox cmbVisiteur;
         private System.Windows.Forms.ComboBox cmbMedecin;
         private System.Windows.Forms.ComboBox cmbFamille;
-        private System.Windows.Forms.BindingNavigator bindingNavigator;
+        private System.Windows.Forms.BindingNavigator bindingNavigatorRapport;
         private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
@@ -366,5 +410,9 @@
         private System.Windows.Forms.BindingSource bindingSourceMedecin;
         private System.Windows.Forms.BindingSource bindingSourceFamille;
         private System.Windows.Forms.BindingSource bindingSourceRapport;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label id;
+        private System.Windows.Forms.TextBox txtNum;
+        private System.Windows.Forms.BindingSource bindingSourceOffrir;
     }
 }
