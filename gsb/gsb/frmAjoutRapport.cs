@@ -1,11 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace gsb
@@ -48,8 +43,9 @@ namespace gsb
             newRapport.date = date.Value;
             newRapport.motif = txtMotif.Text;
             newRapport.bilan = txtBilan.Text;
+
             visiteur user = (visiteur)cmbVisiteur.SelectedValue;
-            newRapport.idVisiteur = user.id;
+            newRapport.idVisiteur = user.id.TrimEnd();
             medecin doc = (medecin)cmbMedecin.SelectedValue;
             newRapport.idMedecin = doc.id;
             return newRapport;
@@ -59,10 +55,9 @@ namespace gsb
       private offrir newOffre()
         {
 
-            int monId= getNumRapport() ;
-
+            rapport r = newRapport();
             offrir offre = new offrir();
-            offre.idRapport =monId ;
+            offre.idRapport = r.id ;
             medicament m = (medicament)cmbMedicament.SelectedValue;
             offre.idMedicament= m.id;
             offre.quantite = 1;
@@ -96,7 +91,7 @@ namespace gsb
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Erreur lors de l'enregistrement : {ex.Message}");
+                MessageBox.Show($"Erreur lors de l'enregistrement : {ex}");
             }
         }
 
